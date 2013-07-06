@@ -20,3 +20,28 @@
 <h3>Next steps:</h3>
 
 <p>Next work item will be to fix reference updating to use relative paths.</p>
+
+<hr />
+
+<h2>Using relative paths for references</h2>
+
+<h3>Task:</h3>
+
+<p>When updating references, use paths relative to .  Currently, system-specific absolute paths are used.</p>
+
+<h3>Implementation:</h3>
+
+<p>Implemented in <a href="diaries/2013-07-02-resources/15:17:54/make_notebook.py">make_notebook.py</a>.</p>
+
+<h3>Results:</h3>
+
+<p>I will be testing these changes by submitting this updated diary entry.  If it shows up correctly in the <a href="https://github.com/jveldridge/lab-notebook-example">example git repo</a>, then this change will have been successful.  Run command (from <code>~/Dropbox/LabNotebookProject/lab-notebook-example/diaries</code>):</p>
+
+<pre><code>make-notebook -g ../ -c markdown -f 2013-07-02.md -m "Updates 2013-07-06 diary with using relative paths for references"
+</code></pre>
+
+<p>Need to verify that <code>make_notebook.py</code> should have been copied to <code>&lt;ROOT&gt;/diaries/2013-07-02-resources/&lt;timestamp&gt;/make_notebook.py</code></p>
+
+<h3>Next steps:</h3>
+
+<p>Add footer with link back to index.</p>
